@@ -1,0 +1,26 @@
+title: "Your Blog"
+description: "Thoughts on things that matter."
+url: "https://dangroch.com"
+baseurl: ""
+
+author:
+  name: "Your Name"
+  bio: "Short bio goes here. Writer, builder, thinker."
+  avatar: "" # optional: path to avatar image
+
+permalink: /:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
