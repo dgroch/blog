@@ -1,4 +1,4 @@
-title: "dangroch.com"
+title: "Dan Groch"
 description: "Writing about AI, metacognition, and genuinely intelligent systems."
 url: "https://dangroch.com"
 baseurl: ""
@@ -6,7 +6,7 @@ baseurl: ""
 author:
   name: "Dan Groch"
   bio: "I build AI systems and think about what it would take to make them genuinely intelligent."
-  avatar: "" # optional: path to avatar image
+  avatar: "/assets/images/avatar.jpg"
 
 permalink: /:year/:month/:day/:title/
 markdown: kramdown
