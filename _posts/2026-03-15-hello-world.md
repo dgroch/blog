@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Hello, World!"
+title: "Most AI systems don’t think. They perform."
 date: 2026-03-15
 description: "Why this blog exists, and what I mean by ‘genuinely intelligent systems.’"
 ---
-
-Most AI systems don’t think. They perform.
 
 That’s not a criticism — it’s a description. The current generation of large language models, agents, and autonomous systems are extraordinarily capable task runners. They pattern-match, they plan, they execute. Some of them do it well enough that the difference between *performing intelligence* and *being intelligent* feels academic.
 
