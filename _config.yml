@@ -1,11 +1,11 @@
-title: "Your Blog"
-description: "Thoughts on things that matter."
+title: "dangroch.com"
+description: "Writing about AI, metacognition, and genuinely intelligent systems."
 url: "https://dangroch.com"
 baseurl: ""
 
 author:
-  name: "Your Name"
-  bio: "Short bio goes here. Writer, builder, thinker."
+  name: "Dan Groch"
+  bio: "I build AI systems and think about what it would take to make them genuinely intelligent."
   avatar: "" # optional: path to avatar image
 
 permalink: /:year/:month/:day/:title/
