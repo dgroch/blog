@@ -79,6 +79,11 @@ Agents that cannot filter noise end up spending cognition on residue. Agents tha
 
 ---
 
+---
+
+← [Previous: Context Management](/2026/03/16/context-management-for-long-running-agents/) · [Next: Attention Filter](/2026/03/16/attention-filter-hook/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -201,6 +206,3 @@ The AGENTS.md triggers provide conditions. Match conditions to your situation. I
 - **Attention Filtering**: When juggling multiple requests, when deciding what information to focus on, or when context feels noisy or overwhelming → read `skills/attention-awareness/SKILL.md` and focus on what matters now.
 ````
 
----
-
-**Next in the series:** [Attention Filter: shaping what the agent sees before it starts thinking](https://dangroch.com/2026/03/16/attention-filter-hook/)

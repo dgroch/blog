@@ -83,6 +83,11 @@ Without that, you don't have dependable cognition. You have eloquent gambling.
 
 ---
 
+---
+
+← [Previous: Resource Selection](/2026/03/16/resource-selection-for-agent-tool-use/) · [Next: Knowing When to Ask](/2026/03/16/knowing-when-to-ask-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -218,3 +223,4 @@ Consult `skills/failure-recovery/failure-log.md` as a calibration input: past fa
 ````markdown
 - **Epistemic Calibration**: When about to state something as fact that you haven't directly verified, when acting on stale or inferred information, or when the cost of being wrong is high → read `skills/epistemic-calibration/SKILL.md` and assess your confidence before speaking or acting.
 ````
+

@@ -70,6 +70,11 @@ Metacognition begins there. Before an agent can monitor its reasoning, it has to
 
 ---
 
+---
+
+← [Previous: Building metacognition for AI agents](/2026/03/15/building-metacognition-for-ai-agents/) · [Next: Env-Model](/2026/03/16/env-model-agent-environment-awareness/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -196,3 +201,4 @@ Before acting on complex or ambiguous tasks, apply these protocols:
 
 - **Self-Model**: When unsure what you can do, when planning multi-step work, or when a tool/skill fails unexpectedly → read `skills/self-model/SKILL.md` and build or consult your capability inventory.
 ````
+

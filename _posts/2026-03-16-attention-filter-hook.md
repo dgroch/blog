@@ -118,6 +118,11 @@ What the agent sees shapes what it can think. Treating that as architecture rath
 
 ---
 
+---
+
+← [Previous: Attention Awareness](/2026/03/16/attention-awareness-for-ai-agents/) · [Next: Context Guard](/2026/03/16/context-guard-hook/) →
+
+
 ## Hook Files
 
 ### HOOK.md
@@ -442,6 +447,3 @@ const handler: HookHandler = async (event) => {
 export default handler;
 ````
 
----
-
-**Next in the series:** [Context Guard: preserving the mind across compaction](https://dangroch.com/2026/03/16/context-guard-hook/)

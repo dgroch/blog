@@ -104,6 +104,11 @@ That is why robust systems do not merely fail less. They fail better. And failin
 
 ---
 
+---
+
+← [Previous: Knowing When to Ask](/2026/03/16/knowing-when-to-ask-agents/) · [Next: Context Management](/2026/03/16/context-management-for-long-running-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -289,3 +294,4 @@ Keep the log under ~30-40 entries. Prune resolved issues and outdated configurat
 ````markdown
 - **Failure Recovery**: When a tool call errors, output is unexpected, you catch yourself retrying the same approach, or the user corrects your output → read `skills/failure-recovery/SKILL.md` and follow the recovery framework.
 ````
+

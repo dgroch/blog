@@ -92,6 +92,11 @@ A useful agent is not the one that never asks. It is the one that makes being as
 
 ---
 
+---
+
+← [Previous: Epistemic Calibration](/2026/03/16/epistemic-calibration-for-ai-agents/) · [Next: Failure Recovery](/2026/03/16/failure-recovery-for-ai-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -258,3 +263,4 @@ If any answer raises a flag, ask. If all clear, act. This takes seconds of inter
 ````markdown
 - **Knowing When to Ask**: Before irreversible actions, when operating on ambiguous instructions, or when confidence is low on a key assumption → read `skills/knowing-when-to-ask/SKILL.md` and decide whether to ask or act.
 ````
+

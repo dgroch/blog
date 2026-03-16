@@ -112,6 +112,11 @@ Planning is not intelligence. But intelligence without planning becomes brittle 
 
 ---
 
+---
+
+← [Previous: Env-Model](/2026/03/16/env-model-agent-environment-awareness/) · [Next: Task Composition](/2026/03/16/task-composition-capability-recombination/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -276,3 +281,4 @@ Do not over-explain the decomposition process itself. The user cares about the p
 ````markdown
 - **Task Decomposition**: When a request is complex, ambiguous, multi-step, or involves irreversible actions → read `skills/task-decomposition/SKILL.md` and decompose before executing.
 ````
+

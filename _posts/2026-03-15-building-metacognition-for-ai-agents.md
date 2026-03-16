@@ -80,3 +80,7 @@ Here's the map:
 Series intro, if you need the short version: most agents today can do impressive work, but they are weak at monitoring themselves while they do it. This metacognition suite is my attempt to turn that missing layer into reusable, installable software that anyone running OpenClaw can benefit from.
 
 If current agents feel intelligent until the moment they do something weirdly stupid, this is the part of the stack worth staring at.
+
+---
+
+[Next: Self-Model](/2026/03/16/self-model-agent-capability-inventory/) →

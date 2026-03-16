@@ -72,6 +72,11 @@ Tool selection is a self-monitoring problem. The agent is not just trying to sol
 
 ---
 
+---
+
+← [Previous: Task Composition](/2026/03/16/task-composition-capability-recombination/) · [Next: Epistemic Calibration](/2026/03/16/epistemic-calibration-for-ai-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -246,3 +251,4 @@ Two mechanisms — no separate selection log needed:
 ````markdown
 - **Resource/Tool Selection**: When multiple approaches exist for a sub-task, when the default tool might not be the best fit, or when efficiency and reliability matter → read `skills/resource-selection/SKILL.md` and choose deliberately.
 ````
+

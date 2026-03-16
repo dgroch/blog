@@ -77,6 +77,11 @@ An agent is not intelligent in the abstract. It is intelligent in a runtime, in 
 
 ---
 
+---
+
+← [Previous: Self-Model](/2026/03/16/self-model-agent-capability-inventory/) · [Next: Task Decomposition](/2026/03/16/task-decomposition-for-ai-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -225,3 +230,4 @@ Do not dump the full model into chat unless the user asks for it.
 ````markdown
 - **Env-Model**: When encountering unexpected failures, adapting output to a channel, or planning environment-dependent work → read `skills/env-model/SKILL.md` and build or consult your environmental model.
 ````
+

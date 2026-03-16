@@ -74,6 +74,11 @@ Thinking is limited by what stays active, what gets compressed, what is written 
 
 ---
 
+---
+
+← [Previous: Failure Recovery](/2026/03/16/failure-recovery-for-ai-agents/) · [Next: Attention Awareness](/2026/03/16/attention-awareness-for-ai-agents/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -161,3 +166,4 @@ After compaction, recover your working context:
 ````markdown
 - **Context Management**: When context is getting heavy, when deciding whether to spawn a sub-agent, or when preparing for a long-running task → read `skills/context-management/SKILL.md` and manage context proactively.
 ````
+

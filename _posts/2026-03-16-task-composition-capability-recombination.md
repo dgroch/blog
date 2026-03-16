@@ -74,6 +74,11 @@ The metacognitive thesis here is that higher-order usefulness often emerges from
 
 ---
 
+---
+
+← [Previous: Task Decomposition](/2026/03/16/task-decomposition-for-ai-agents/) · [Next: Resource Selection](/2026/03/16/resource-selection-for-agent-tool-use/) →
+
+
 ## Skill Files
 
 ### SKILL.md
@@ -238,3 +243,4 @@ Keep entries brief. If the log exceeds ~50 entries, prune old rejected proposals
 ````markdown
 - **Task Composition**: When exploring what's possible, when an opportunity exists to exceed the literal request, or when asking "what can I build with what I have?" → read `skills/task-composition/SKILL.md` and compose from available capabilities.
 ````
+
