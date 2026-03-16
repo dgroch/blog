@@ -540,3 +540,7 @@ const handler: HookHandler = async (event) => {
 
 export default handler;
 ````
+
+---
+
+**Next in the series:** [Context Management: thinking is limited by what you can keep in mind](https://dangroch.com/2026/03/16/context-management-for-long-running-agents/)
