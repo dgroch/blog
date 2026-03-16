@@ -441,3 +441,7 @@ const handler: HookHandler = async (event) => {
 
 export default handler;
 ````
+
+---
+
+**Next in the series:** [Context Guard: preserving the mind across compaction](https://dangroch.com/2026/03/16/context-guard-hook/)
