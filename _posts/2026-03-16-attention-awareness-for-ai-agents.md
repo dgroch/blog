@@ -200,3 +200,7 @@ The AGENTS.md triggers provide conditions. Match conditions to your situation. I
 ````markdown
 - **Attention Filtering**: When juggling multiple requests, when deciding what information to focus on, or when context feels noisy or overwhelming → read `skills/attention-awareness/SKILL.md` and focus on what matters now.
 ````
+
+---
+
+**Next in the series:** [Attention Filter: shaping what the agent sees before it starts thinking](https://dangroch.com/2026/03/16/attention-filter-hook/)
