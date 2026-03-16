@@ -7,6 +7,9 @@ description: "Tool choice is not a convenience layer. It is one of the agent's c
 
 Many agent failures are not failures of reasoning in the abstract. They are failures of choosing how to act.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 The model knows the goal. It even has the tools. But it reaches for the wrong one because it is familiar, overgeneralized, or narratively convenient.
 
 This is what Resource Selection is designed to correct.
@@ -53,7 +56,7 @@ Language models have strong familiarity bias. They often want to write code beca
 
 That is not a cosmetic inefficiency. It affects failure rates, latency, token use, and trust.
 
-The integration with Failure Recovery is another good touch. If an approach fails, pivot by re-selecting from the remaining candidates with the failed option removed. That sounds obvious, but it's not how agents naturally behave. They often keep reworking the same doomed path because sunk cost feels like persistence.
+The integration with [Failure Recovery](https://dangroch.com/2026/03/16/failure-recovery-for-ai-agents/) is another good touch. If an approach fails, pivot by re-selecting from the remaining candidates with the failed option removed. That sounds obvious, but it's not how agents naturally behave. They often keep reworking the same doomed path because sunk cost feels like persistence.
 
 The skill names this explicitly as an anti-pattern:
 

@@ -7,6 +7,9 @@ description: "Relevance-aware injection is not garnish. It is part of the cognit
 
 Before an agent reasons, something has already decided what is in front of it.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 That sounds trivial. It isn't.
 
 What the agent sees, in what order, with what framing, and with what lightweight cues about urgency or continuity will shape the reasoning that follows. Attention is not merely an internal property of the model. It is also an architectural choice.
@@ -105,7 +108,7 @@ That sounds almost too simple. But simplicity is the point. Attention scaffoldin
 
 A lot of current agent systems dump everything into the prompt and hope the model sorts salience out internally. Sometimes it does. Sometimes it doesn't. Attention Filter is a direct rejection of that passive design. It says relevance can be shaped mechanically before reasoning begins.
 
-The relationship to the companion Attention Awareness skill is exactly right. The hook shapes what the agent notices. The skill teaches it how to reason about what matters, what is background, what is noise, and when to switch tasks. One is automated scaffolding. The other is conscious discipline.
+The relationship to the companion [Attention Awareness](https://dangroch.com/2026/03/16/attention-awareness-for-ai-agents/) skill is exactly right. The hook shapes what the agent notices. The skill teaches it how to reason about what matters, what is background, what is noise, and when to switch tasks. One is automated scaffolding. The other is conscious discipline.
 
 A concrete example helps. Suppose the agent has an active plan to write a report and receives a new message saying the staging site is down. The hook tags the message urgent. That alone changes the attentional landscape before the model does any deeper reasoning. If instead the new message is just ambient chatter or a low-priority question, the hook can preserve continuity by reminding the agent that current work exists and a switch should be deliberate.
 

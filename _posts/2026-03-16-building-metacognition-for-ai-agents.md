@@ -1,11 +1,14 @@
 ---
 layout: post
 title: "Building metacognition for AI agents"
-date: 2026-03-16
+date: 2026-03-15
 description: "Why capable agents still fail, and how OpenClaw turns self-monitoring into software architecture."
 ---
 
 Most AI agents fail in a strangely familiar way. They do impressive work right up until they don't. They use the wrong tool because it came to mind first. They state guesses like facts. They forget what they were doing halfway through a long task. They ask the user things they should infer, and infer things they absolutely should have asked about.
+
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
 
 That isn't just a model-quality problem. It's a metacognition problem.
 
@@ -17,8 +20,8 @@ That design choice matters. If metacognition only exists as a nice sentence in a
 
 The trigger conditions look like this in practice. Each skill adds a single conditional pointer to the agent's `AGENTS.md`:
 
-> - **Self-Model**: When unsure what you can do, when planning multi-step work, or when a tool/skill fails unexpectedly → read `skills/self-model/SKILL.md` and build or consult your capability inventory.
-> - **Env-Model**: When encountering unexpected failures, adapting output to a channel, or planning environment-dependent work → read `skills/env-model/SKILL.md` and build or consult your environmental model.
+> - **[Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/)**: When unsure what you can do, when planning multi-step work, or when a tool/skill fails unexpectedly → read `skills/self-model/SKILL.md` and build or consult your capability inventory.
+> - **[Env-Model](https://dangroch.com/2026/03/16/env-model-agent-environment-awareness/)**: When encountering unexpected failures, adapting output to a channel, or planning environment-dependent work → read `skills/env-model/SKILL.md` and build or consult your environmental model.
 
 Short, conditional, pointer-based. The agent reads the SKILL.md only when the trigger fires. Everything else stays out of context.
 
@@ -28,9 +31,9 @@ The ten skills cluster into three jobs.
 
 First, the agent needs an accurate model of itself and its situation. Self-Model and Env-Model handle that. One asks, what can I actually do right now? The other asks, what world am I operating in? Those are different questions, and agents routinely blur them.
 
-Second, the agent needs a disciplined way to turn goals into action. Task Decomposition, Task Composition, Resource Selection, Epistemic Calibration, and Knowing When to Ask all live here. Together they constrain the moment where a language model is most likely to bluff: the jump from "I understand the request" to "therefore I know how to execute it."
+Second, the agent needs a disciplined way to turn goals into action. [Task Decomposition](https://dangroch.com/2026/03/16/task-decomposition-for-ai-agents/), [Task Composition](https://dangroch.com/2026/03/16/task-composition-capability-recombination/), [Resource Selection](https://dangroch.com/2026/03/16/resource-selection-for-agent-tool-use/), [Epistemic Calibration](https://dangroch.com/2026/03/16/epistemic-calibration-for-ai-agents/), and [Knowing When to Ask](https://dangroch.com/2026/03/16/knowing-when-to-ask-agents/) all live here. Together they constrain the moment where a language model is most likely to bluff: the jump from "I understand the request" to "therefore I know how to execute it."
 
-Third, the agent needs resilience under pressure. Failure Recovery, Context Management, and Attention Awareness are less glamorous and more important. Most real systems do not break on first principles. They break because a tool failed twice and the model kept retrying, or because a long session polluted attention with irrelevant residue, or because compaction removed the assumptions that made the current plan legible.
+Third, the agent needs resilience under pressure. [Failure Recovery](https://dangroch.com/2026/03/16/failure-recovery-for-ai-agents/), [Context Management](https://dangroch.com/2026/03/16/context-management-for-long-running-agents/), and [Attention Awareness](https://dangroch.com/2026/03/16/attention-awareness-for-ai-agents/) are less glamorous and more important. Most real systems do not break on first principles. They break because a tool failed twice and the model kept retrying, or because a long session polluted attention with irrelevant residue, or because compaction removed the assumptions that made the current plan legible.
 
 That is where the hooks come in. `context-guard` listens for `session:compact:before`, `session:compact:after`, and `agent:bootstrap`. Before compaction, it writes a `.context-checkpoint.md` file with plan state, recent failures, file changes, and next steps. On bootstrap, it injects a bounded recovery block and renames the checkpoint to `.context-checkpoint.recovered.md`. The hook declares its lifecycle registration in frontmatter:
 
@@ -71,8 +74,8 @@ Here's the map:
 - Failure Recovery - diagnosis and adaptation instead of blind retries
 - Context Management - working within finite cognitive bandwidth
 - Attention Awareness - focusing on signal and ignoring noise
-- Context Guard - preserving the mind across compaction
-- Attention Filter - shaping what the agent sees before it starts thinking
+- [Context Guard](https://dangroch.com/2026/03/16/context-guard-hook/) - preserving the mind across compaction
+- [Attention Filter](https://dangroch.com/2026/03/16/attention-filter-hook/) - shaping what the agent sees before it starts thinking
 
 Series intro, if you need the short version: most agents today can do impressive work, but they are weak at monitoring themselves while they do it. OpenClaw's metacognition suite is one of the clearest attempts I've seen to turn that missing layer into reusable software.
 

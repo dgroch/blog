@@ -7,6 +7,9 @@ description: "Good agent planning breaks goals into executable steps without dri
 
 There are two common failures in agent planning.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 The first is not planning at all. The model jumps from request to action, misses dependencies, and discovers halfway through that step three required information from step one.
 
 The second is more insidious: elaborate planning theatre. The agent produces a crisp multi-section plan that feels intelligent, then fails because the plan was never checked against actual tools, actual constraints, or the cost of being wrong.
@@ -101,7 +104,7 @@ The re-planning section is just as important. When a step fails, the plan update
 
 The skill explicitly says not to throw away the whole plan when one step fails. Re-plan from the failed step forward unless the goal itself changed. That is exactly what good operators do and exactly what many agents don't.
 
-The shared plan format also matters beyond this one skill. Task Composition and Failure Recovery are designed to interoperate with it. A composed workflow can later be decomposed for execution, and a failed plan can be surgically updated with a step `3b` instead of rewritten as if nothing happened.
+The shared plan format also matters beyond this one skill. [Task Composition](https://dangroch.com/2026/03/16/task-composition-capability-recombination/) and [Failure Recovery](https://dangroch.com/2026/03/16/failure-recovery-for-ai-agents/) are designed to interoperate with it. A composed workflow can later be decomposed for execution, and a failed plan can be surgically updated with a step `3b` instead of rewritten as if nothing happened.
 
 The failure mode this corrects is the language-model instinct to mistake narrative coherence for operational coherence. A model is very good at producing a sequence that sounds like a plan. It is much worse at respecting hidden dependencies unless something forces them into the open.
 

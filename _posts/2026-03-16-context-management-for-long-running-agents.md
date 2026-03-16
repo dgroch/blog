@@ -7,6 +7,9 @@ description: "Long-running agents don't just need bigger windows. They need bett
 
 A lot of agent design still treats context as if it were just more memory. Give the system a bigger window, better retrieval, maybe a summary layer, and the problem goes away.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 It doesn't.
 
 Context is not just storage. It is working memory. And working memory is not valuable because it is large. It is valuable because the right things stay legible while the wrong things stay out of the way.

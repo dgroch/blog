@@ -7,6 +7,9 @@ description: "Capability inventory is the difference between useful autonomy and
 
 A surprising amount of agent failure begins with a simple lie: the system behaves as if having a language model means having a capability.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 It doesn't.
 
 An agent can describe a browser flow without having browser access. It can propose a git operation without `git` installed. It can speak confidently about connected nodes, external APIs, image generation, or local binaries that are absent, stale, or broken. This is one of the most dangerous default behaviours in LLM systems because it looks like competence right until execution time.

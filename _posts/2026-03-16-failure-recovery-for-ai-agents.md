@@ -7,6 +7,9 @@ description: "Robust systems don't just fail less. They fail with diagnosis, ada
 
 Blind retries are not resilience. They are just faster repetition of the same mistake.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 Failure Recovery in OpenClaw starts from that premise and builds a much healthier response to things going wrong.
 
 [→ Jump to skill files](#skill-files)
@@ -75,7 +78,7 @@ When a decomposed plan has a failing step, the repair is surgical:
    - Depends on: step 3b (was: step 3)
 ```
 
-This is where the suite starts to feel like practical cognition rather than a bag of prompts. Failure Recovery does not live alone. It reads from Self-Model to distinguish capability gaps from environment problems. It can trigger Task Decomposition when the plan itself is wrong. It works with the shared plan format so a failed step can become step `3b` without rewriting everything from scratch. It updates understanding rather than just apologizing.
+This is where the suite starts to feel like practical cognition rather than a bag of prompts. Failure Recovery does not live alone. It reads from [Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/) to distinguish capability gaps from environment problems. It can trigger [Task Decomposition](https://dangroch.com/2026/03/16/task-decomposition-for-ai-agents/) when the plan itself is wrong. It works with the shared plan format so a failed step can become step `3b` without rewriting everything from scratch. It updates understanding rather than just apologizing.
 
 That last part is the heart of it. Most agent failure modes are bad not because they happen, but because the system learns almost nothing from them.
 

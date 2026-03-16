@@ -7,6 +7,9 @@ description: "The real trust problem in AI is often not ignorance but certainty 
 
 One of the most dangerous things a language model can do is sound right.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 Not be right. Sound right.
 
 The core failure is not always lack of knowledge. It is misrepresentation of certainty. A model that says "I don't know" when it should know is frustrating. A model that says "I know" when it doesn't is corrosive.

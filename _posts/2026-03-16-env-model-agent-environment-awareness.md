@@ -7,6 +7,9 @@ description: "Capability is not enough. An agent also needs a working model of t
 
 A system can know exactly what tools it has and still behave stupidly.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 That happens whenever intelligence is treated as abstract instead of situated.
 
 An agent may have permission to use a browser in one session and not another. It may be running in a container, on a remote node, in a group chat, in a sub-agent context, on a machine with no network egress, or under a channel with formatting and length constraints. None of that is a side detail. It is the world the cognition has to inhabit.
@@ -15,7 +18,7 @@ This is what the Env-Model skill is for.
 
 [→ Jump to skill files](#skill-files)
 
-OpenClaw separates it cleanly from Self-Model, and that separation is more important than it looks. Self-Model tracks what the agent can do. Env-Model tracks what is around the agent: runtime, channels, nodes, user context, session state, and connectivity. That distinction prevents a common category error. Having a tool is not the same thing as being in conditions where the tool is usable.
+OpenClaw separates it cleanly from [Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/), and that separation is more important than it looks. Self-Model tracks what the agent can do. Env-Model tracks what is around the agent: runtime, channels, nodes, user context, session state, and connectivity. That distinction prevents a common category error. Having a tool is not the same thing as being in conditions where the tool is usable.
 
 The `SKILL.md` reflects that. The quick scan block is deliberately cheap:
 

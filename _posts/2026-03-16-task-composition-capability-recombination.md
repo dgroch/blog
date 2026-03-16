@@ -7,13 +7,16 @@ description: "Useful agents don't just follow plans. They discover new workflows
 
 One mark of intelligence is not merely breaking down a known problem. It is seeing a solution shape that wasn't explicitly handed to you.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 In software terms, that often means recombination.
 
 Task Composition in OpenClaw asks a different question from decomposition. Instead of how do I break this goal into steps, it asks what new outcomes become possible if I combine the capabilities I already have.
 
 [→ Jump to skill files](#skill-files)
 
-The `SKILL.md` makes this explicit. Start with a capability survey. Self-Model is a hard dependency. If the capability inventory doesn't exist, build it before composing. Read the environment model too, because a clever workflow that depends on absent conditions is just another hallucination. Then abstract the available components into categories:
+The `SKILL.md` makes this explicit. Start with a capability survey. [Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/) is a hard dependency. If the capability inventory doesn't exist, build it before composing. Read the environment model too, because a clever workflow that depends on absent conditions is just another hallucination. Then abstract the available components into categories:
 
 > Think about capabilities in these abstract categories (a thinking aid, not a type system):
 > - **Producers**: generate content (text generation, data fetching, image creation)
@@ -32,7 +35,7 @@ The `SKILL.md` is explicit about the bar:
 
 > Be ruthless. Proposing useless compositions erodes trust faster than proposing nothing.
 
-The shared plan format with Task Decomposition is another smart move. Composition adds two fields, then reuses the rest of the step structure:
+The shared plan format with [Task Decomposition](https://dangroch.com/2026/03/16/task-decomposition-for-ai-agents/) is another smart move. Composition adds two fields, then reuses the rest of the step structure:
 
 ```markdown
 ## Plan: [Workflow name]

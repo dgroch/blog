@@ -7,6 +7,9 @@ description: "A useful agent is neither timid nor reckless. It knows when interr
 
 People often talk about autonomous agents as if asking the user a question is evidence that autonomy failed.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 That is backwards.
 
 The real failure is asking at the wrong times, or not asking when the consequences clearly demand it.

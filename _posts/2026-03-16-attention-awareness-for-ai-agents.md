@@ -7,6 +7,9 @@ description: "Better reasoning is not just more reasoning. It is better allocati
 
 There is a naïve theory of intelligence that says more attention is always better.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 Read more. Track more. Consider more. Invoke more reasoning steps. Keep more context alive.
 
 That theory fails quickly in real systems. Better cognition is not just about adding more thought. It is about allocating thought well.
@@ -46,15 +49,15 @@ The skill also contains a useful warning against over-metacognition. The guidanc
 
 > **Simple tasks** (single command, quick edit, factual question): Skip metacognitive protocols. Just act.
 >
-> **Medium tasks** (multi-file changes, unfamiliar domain, moderate complexity): Use 1-2 relevant skills — usually Task Decomposition + Resource Selection.
+> **Medium tasks** (multi-file changes, unfamiliar domain, moderate complexity): Use 1-2 relevant skills — usually [Task Decomposition](https://dangroch.com/2026/03/16/task-decomposition-for-ai-agents/) + [Resource Selection](https://dangroch.com/2026/03/16/resource-selection-for-agent-tool-use/).
 >
 > **Complex tasks** (multi-step plans, cross-system work, high stakes): Use the full suite, but sequence efficiently:
-> - Self-Model and Env-Model only if you don't already have current data
+> - [Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/) and [Env-Model](https://dangroch.com/2026/03/16/env-model-agent-environment-awareness/) only if you don't already have current data
 > - Decomposition before Composition
 > - Calibration and Knowing-When-to-Ask as continuous habits, not separate invocations
 > - Resource Selection at each plan step
 >
-> **Recovery situations**: Failure Recovery is the entry point — it references other skills as needed.
+> **Recovery situations**: [Failure Recovery](https://dangroch.com/2026/03/16/failure-recovery-for-ai-agents/) is the entry point — it references other skills as needed.
 
 If you are making three or more tool calls of pure thinking without producing work, you are overdoing it. That line alone could rescue a lot of agents from self-inflicted paralysis.
 

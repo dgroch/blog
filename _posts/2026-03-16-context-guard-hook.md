@@ -7,6 +7,9 @@ description: "Some forms of metacognition shouldn't depend on the agent remember
 
 One of the hardest things about long-running agent systems is that memory loss is not binary.
 
+
+> The full implementation is available on GitHub: [github.com/dgroch/metacognition](https://github.com/dgroch/metacognition)
+
 Before a hard context reset, there is gradual drift. Then comes compaction, which preserves some things, compresses others, and quietly drops details the model may still need. If the agent has to remember, in that moment, to preserve its own critical state, you are already gambling.
 
 That is why the Context Guard hook matters.
