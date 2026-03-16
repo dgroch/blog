@@ -2,7 +2,7 @@
 layout: post
 title: "Building metacognition for AI agents"
 date: 2026-03-15
-description: "Why capable agents still fail, and how OpenClaw turns self-monitoring into software architecture."
+description: "Why capable agents still fail, and how I turned self-monitoring into installable software architecture."
 ---
 
 Most AI agents fail in a strangely familiar way. They do impressive work right up until they don't. They use the wrong tool because it came to mind first. They state guesses like facts. They forget what they were doing halfway through a long task. They ask the user things they should infer, and infer things they absolutely should have asked about.
@@ -14,7 +14,7 @@ That isn't just a model-quality problem. It's a metacognition problem.
 
 By metacognition I don't mean mystical self-awareness. I mean the set of disciplines a system uses to monitor its own capabilities, uncertainty, attention, context, and judgment while it works. Human beings do this unevenly. Most agents barely do it at all.
 
-OpenClaw's metacognition suite is interesting because it treats this as architecture rather than aspiration. The repo breaks the problem into ten installable reasoning skills and two always-on hooks. The skills live as markdown protocols the agent loads on demand. The hooks live as TypeScript handlers that run in the platform layer. Both write to disk so the system can survive compaction, session boundaries, and ordinary operational drift.
+I built a metacognition suite for OpenClaw that treats this as architecture rather than aspiration. The repo breaks the problem into ten installable reasoning skills and two always-on hooks. I'm sharing it publicly to help others configure their agents to be more intelligent. The skills live as markdown protocols the agent loads on demand. The hooks live as TypeScript handlers that run in the platform layer. Both write to disk so the system can survive compaction, session boundaries, and ordinary operational drift.
 
 That design choice matters. If metacognition only exists as a nice sentence in a system prompt, it disappears the moment the model gets busy. If it exists as named protocols, files, triggers, checkpoints, and recovery paths, you can start to build agents that do more than perform confidence.
 
@@ -64,19 +64,19 @@ This series walks through each part of the suite in that spirit. Not as a featur
 
 Here's the map:
 
-- Self-Model - capability inventory as the basis of non-delusional agency
-- Env-Model - intelligence as a situated property, not an abstract one
-- Task Decomposition - planning that respects execution reality
-- Task Composition - novel workflows built from existing capabilities
-- Resource Selection - tool choice as cognition, not convenience
-- Epistemic Calibration - confidence that matches evidence
-- Knowing When to Ask - the boundary between autonomy and judgment
-- Failure Recovery - diagnosis and adaptation instead of blind retries
-- Context Management - working within finite cognitive bandwidth
-- Attention Awareness - focusing on signal and ignoring noise
-- [Context Guard](https://dangroch.com/2026/03/16/context-guard-hook/) - preserving the mind across compaction
-- [Attention Filter](https://dangroch.com/2026/03/16/attention-filter-hook/) - shaping what the agent sees before it starts thinking
+- [Self-Model](https://dangroch.com/2026/03/16/self-model-agent-capability-inventory/) – capability inventory as the basis of non-delusional agency
+- [Env-Model](https://dangroch.com/2026/03/16/env-model-agent-environment-awareness/) – intelligence as a situated property, not an abstract one
+- [Task Decomposition](https://dangroch.com/2026/03/16/task-decomposition-for-ai-agents/) – planning that respects execution reality
+- [Task Composition](https://dangroch.com/2026/03/16/task-composition-capability-recombination/) – novel workflows built from existing capabilities
+- [Resource Selection](https://dangroch.com/2026/03/16/resource-selection-for-agent-tool-use/) – tool choice as cognition, not convenience
+- [Epistemic Calibration](https://dangroch.com/2026/03/16/epistemic-calibration-for-ai-agents/) – confidence that matches evidence
+- [Knowing When to Ask](https://dangroch.com/2026/03/16/knowing-when-to-ask-agents/) – the boundary between autonomy and judgment
+- [Failure Recovery](https://dangroch.com/2026/03/16/failure-recovery-for-ai-agents/) – diagnosis and adaptation instead of blind retries
+- [Context Management](https://dangroch.com/2026/03/16/context-management-for-long-running-agents/) – working within finite cognitive bandwidth
+- [Attention Awareness](https://dangroch.com/2026/03/16/attention-awareness-for-ai-agents/) – focusing on signal and ignoring noise
+- [Context Guard](https://dangroch.com/2026/03/16/context-guard-hook/) – preserving the mind across compaction
+- [Attention Filter](https://dangroch.com/2026/03/16/attention-filter-hook/) – shaping what the agent sees before it starts thinking
 
-Series intro, if you need the short version: most agents today can do impressive work, but they are weak at monitoring themselves while they do it. OpenClaw's metacognition suite is one of the clearest attempts I've seen to turn that missing layer into reusable software.
+Series intro, if you need the short version: most agents today can do impressive work, but they are weak at monitoring themselves while they do it. This metacognition suite is my attempt to turn that missing layer into reusable, installable software that anyone running OpenClaw can benefit from.
 
 If current agents feel intelligent until the moment they do something weirdly stupid, this is the part of the stack worth staring at.
