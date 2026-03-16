@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Most AI systems don’t think. They perform."
-date: 2026-03-15
+date: 2026-03-14
 description: "Why this blog exists, and what I mean by ‘genuinely intelligent systems.’"
 ---
 
